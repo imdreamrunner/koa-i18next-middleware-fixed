@@ -1,5 +1,12 @@
 <big><h1 align="center">koa-i18next-middleware-fixed</h1></big>
 
+<p align="center">
+  <a href="https://npmjs.org/package/koa-i18next-middleware-fixed">
+    <img src="https://img.shields.io/npm/v/koa-i18next-middleware-fixed.svg?style=flat-square"
+         alt="NPM Version">
+  </a>
+</p>
+
 <p align="center"><big>
 An i18next middleware for koa2 framework with some fixes.
 </big></p>
