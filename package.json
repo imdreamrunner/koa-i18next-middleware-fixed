@@ -1,7 +1,7 @@
 {
-    "name": "koa-i18next-middleware",
-    "version": "1.1.10",
-    "description": "An i18next middleware for koa2 framework.",
+    "name": "koa-i18next-middleware-fixed",
+    "version": "1.1.10b",
+    "description": "An i18next middleware for koa2 framework with some fixes",
     "main": "dist/index.js",
     "scripts": {
         "debug": "node register",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/lxzxl/koa-i18next-middleware.git"
+        "url": "git+https://github.com/janealter/koa-i18next-middleware.git"
     },
     "keywords": [
         "i18",
@@ -23,12 +23,9 @@
         "koa",
         "koa2"
     ],
-    "author": "lxzxl <lixiaozheng1990@gmail.com>",
+    "author": "Janealter <janealter_92@mail.ru>",
     "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/lxzxl/koa-i18next-middleware/issues"
-    },
-    "homepage": "https://github.com/lxzxl/koa-i18next-middleware#readme",
+    "homepage": "https://github.com/janealter/koa-i18next-middleware#readme",
     "dependencies": {
         "cookies": "^0.7.1",
         "i18next": "^10.2.2",
