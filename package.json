@@ -1,6 +1,6 @@
 {
     "name": "koa-i18next-middleware-async",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "An i18next middleware for koa2 framework with some fixes",
     "main": "dist/index.js",
     "scripts": {
