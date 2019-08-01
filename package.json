@@ -1,6 +1,6 @@
 {
     "name": "koa-i18next-middleware-async",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "An i18next middleware for koa2 framework with some fixes",
     "main": "dist/index.js",
     "scripts": {
@@ -44,7 +44,6 @@
         "rimraf": "^2.6.2"
     },
     "publishConfig": {
-      "registry": "https://registry.npmjs.org/"
+        "registry": "https://registry.npmjs.org/"
     }
-  
 }
