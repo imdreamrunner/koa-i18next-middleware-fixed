@@ -49,15 +49,15 @@ class LanguageDetector {
         this.services = services;
         this.options = defaults(options, this.options || {}, getDefaultsOpt());
         this.i18nextOptions = i18nextOptions;
-        try {
-            this.addDetector(querystringLookup);
-            this.addDetector(pathLookup);
-            this.addDetector(cookieLookup);
-            this.addDetector(headerLookup);
-            this.addDetector(sessionLookup);
-        } catch (e) {
-            console.error(e.message);
-        }
+        // try {
+        //     this.addDetector(querystringLookup);
+        //     this.addDetector(pathLookup);
+        //     this.addDetector(cookieLookup);
+        //     this.addDetector(headerLookup);
+        //     this.addDetector(sessionLookup);
+        // } catch (e) {
+        //     console.error(e.message);
+        // }
     }
 
     addDetector(detector) {
