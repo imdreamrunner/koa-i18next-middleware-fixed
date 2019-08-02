@@ -39,7 +39,7 @@ function defaults(obj) {
 class LanguageDetector {
     constructor(services, options = {}, i18nextOptions = {}) {
         this.type = 'languageDetector';
-        this.async = true;
+        this.asyncDetect = true; // do not set async here. because ctx will be context
         this.detectors = {};
 
         this.init(services, options, i18nextOptions);
@@ -49,15 +49,15 @@ class LanguageDetector {
         this.services = services;
         this.options = defaults(options, this.options || {}, getDefaultsOpt());
         this.i18nextOptions = i18nextOptions;
-        // try {
-        //     this.addDetector(querystringLookup);
-        //     this.addDetector(pathLookup);
-        //     this.addDetector(cookieLookup);
-        //     this.addDetector(headerLookup);
-        //     this.addDetector(sessionLookup);
-        // } catch (e) {
-        //     console.error(e.message);
-        // }
+        try {
+            this.addDetector(querystringLookup);
+            this.addDetector(pathLookup);
+            this.addDetector(cookieLookup);
+            this.addDetector(headerLookup);
+            this.addDetector(sessionLookup);
+        } catch (e) {
+            console.error(e.message);
+        }
     }
 
     addDetector(detector) {
@@ -67,11 +67,6 @@ class LanguageDetector {
 
     async detect(ctx) {
         if (arguments.length < 1) {
-            return;
-        }
-
-        // Do not detech when i18next calls without ctx.
-        if (typeof ctx !== 'object') {
             return;
         }
 
